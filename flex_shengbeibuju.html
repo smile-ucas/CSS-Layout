@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex 圣杯布局</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        html{
+            height: 100%;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            min-height: 100px;
+            height: 100%;
+            width: 100%;
+        }
+        .header,.foot{
+            flex: 1;
+            /*flex属性是flex-grow, flex-shrink 和 flex-basis的简写，默认值为0 1 auto。后两个属性可选*/
+
+            background-color: #ff29cd;
+            height: 50px;
+        }
+        .con{
+            display: flex;
+            flex: 1;
+        }
+        .mid{
+            flex: 1;
+            background-color: #84ffc4;
+        }
+        .left,.right{
+            flex: 0 0 120px;
+            /*它俩设为宽度均为120px*/
+            background-color: antiquewhite;
+        }
+
+
+        /*响应式设计  党浏览器宽度减小时，把con部分的三个子元素放一列平分*/
+        @media (max-width: 768px) {
+            .con{
+                flex-direction: column;
+                flex: 1;
+            }
+            .left,.mid,.right{
+                flex: auto;
+                /*flex: 1 1 auto;简写为flex:auto;*/
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="header">header</div>
+<div class="con">
+    <!--以下是h5新标签，nav是导航,main是重要内容，aside是文章的侧栏-->
+    <nav class="left">导航</nav>
+    <main class="mid">主要内容</main>
+    <aside class="right">文章的侧栏</aside>
+</div>
+<div class="foot">foot</div>
+</body>
+</html>

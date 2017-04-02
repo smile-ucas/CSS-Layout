@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex 网格布局</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            height: 100%;
+            width:100%;
+        }
+        .Grid0,.Grid1,.Grid2,.Grid3{
+            display: flex;
+            width: 100%;
+            padding: 10px;
+        }
+        .Grid0 .GridCell,.Grid1 .GridCell,.Grid2 .GridCell,.Grid3 .GridCell{
+            flex-grow: 1;
+            border: 1px solid black;
+            text-align: center;
+        }
+        .Grid1 .GridCell:nth-child(1){
+            flex: 0 0 50%;
+            border: 1px solid black;
+            text-align: center;
+        }
+        .Grid2 .GridCell:nth-child(3){
+            flex: 0 0 20%;
+            border: 1px solid black;
+            text-align: center;
+        }
+        .Grid3 .GridCell:nth-child(2){
+            flex: 0 0 100px;
+            border: 1px solid black;
+            text-align: center;;
+        }
+    </style>
+</head>
+<body>
+<h1>基本网格布局</h1>
+<p>例子1</p>
+<div class="Grid0">
+    <div class="GridCell">平分</div>
+    <div class="GridCell">平分</div>
+    <div class="GridCell">平分</div>
+</div>
+<p>例子2</p>
+<div class="Grid0">
+    <div class="GridCell">平分</div>
+    <div class="GridCell">平分</div>
+    <div class="GridCell">平分</div>
+    <div class="GridCell">平分</div>
+    <div class="GridCell">平分</div>
+    <div class="GridCell">平分</div>
+</div>
+<h1>百分比布局</h1>
+<p>例子1</p>
+<div class="Grid1">
+    <div class="GridCell">固定50%</div>
+    <div class="GridCell">平分</div>
+    <div class="GridCell">平分</div>
+</div>
+<p>例子2</p>
+<div class="Grid2">
+    <div class="GridCell">平分</div>
+    <div class="GridCell">平分</div>
+    <div class="GridCell">固定20%</div>
+</div>
+<p>例子3</p>
+<div class="Grid3">
+    <div class="GridCell">平分</div>
+    <div class="GridCell">固定200px</div>
+    <div class="GridCell">平分</div>
+</div>
+</body>
+</html>

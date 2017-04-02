@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex 骰子布局</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        html,body{
+            height:100%;
+        }
+        body{
+            width:100%;
+            background-color: black;
+        }
+        .container{
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            padding: 10px;
+
+            flex-wrap: wrap;
+        }
+        .pip{
+            display: block;
+            width:25px;
+            height:25px;
+            border-radius: 100%;
+            background-color: black;
+        }
+        [class$="box"]{
+            display: flex;
+
+            height: 100px;
+            width:100px;
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: inset 0 5px white,inset 0 -5px #bbb,inset 5px 0 #d7d7d7,inset -5px 0 #d7d7d7;
+        }
+        .first-box{
+            justify-content: center;
+            align-items: center;
+        }
+        .second-box{
+            justify-content: space-between;
+        }
+        /*第二个孩子nth-child(2)*/
+        .second-box .pip:nth-child(2){
+            align-self: flex-end;
+        }
+        .third-box{
+            justify-content: space-between;
+        }
+        .third-box .pip:nth-child(2){
+             align-self: center;
+        }
+        .third-box .pip:nth-child(3){
+            align-self: flex-end;
+        }
+        .fourth-box{
+            justify-content: space-between;
+        }
+        .fourth-box .column{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .fifth-box{
+            justify-content: space-between;
+        }
+        .fifth-box .column{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .fifth-box .column:nth-child(2){
+            align-self: center;
+        }
+        .sixth-box{
+            justify-content: space-between;
+        }
+        .sixth-box .column{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="first-box">
+        <span class="pip"></span>
+    </div>
+    <div class="second-box">
+        <span class="pip"></span>
+        <span class="pip"></span>
+    </div>
+    <div class="third-box">
+        <span class="pip"></span>
+        <span class="pip"></span>
+        <span class="pip"></span>
+    </div>
+    <div class="fourth-box">
+        <div class="column">
+            <span class="pip"></span>
+            <span class="pip"></span>
+        </div>
+        <div class="column">
+            <span class="pip"></span>
+            <span class="pip"></span>
+        </div>
+    </div>
+    <div class="fifth-box">
+        <div class="column">
+            <span class="pip"></span>
+            <span class="pip"></span>
+        </div>
+        <div class="column">
+            <span class="pip"></span>
+        </div>
+        <div class="column">
+            <span class="pip"></span>
+            <span class="pip"></span>
+        </div>
+    </div>
+    <div class="sixth-box">
+        <div class="column">
+            <span class="pip"></span>
+            <span class="pip"></span>
+            <span class="pip"></span>
+        </div>
+        <div class="column">
+            <span class="pip"></span>
+            <span class="pip"></span>
+            <span class="pip"></span>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

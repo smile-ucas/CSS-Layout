@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>一列布局</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+        }
+
+        .top{
+            height:100px;
+            background:darkred;
+        }
+        .main{
+            width:800px;
+            height:300px;
+            background: grey;
+
+            /*!*水平居中*!如果这个div设了绝对定位或fixed定位或float，这条就不管用了*/
+            margin:0 auto;
+
+
+        }
+        .foot{
+            height:100px;
+            width:800px;
+            background:green;
+            margin: 0 auto;
+        }
+
+    </style>
+</head>
+<body>
+  <div class="top"></div>
+  <div class="main"></div>
+  <div class="foot"></div>
+</body>
+</html>

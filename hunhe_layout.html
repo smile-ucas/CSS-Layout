@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>混合布局(在一列布局下 对中间的div里设置俩浮动的div,再接着扩展，此页未用绝对定位，都用的float)</title>
+    <style>
+        .top{
+            height:100px;
+            background: red;
+        }
+        .head{
+            height:100px;
+            width:300px;
+            background-color: cadetblue;
+            margin: 0 auto;
+        }
+        .main{
+            height:300px;
+            width:500px;
+            background: blanchedalmond;
+
+            margin: 0 auto;
+        }
+        .left{
+            height:300px;
+            width:200px;
+            background-color: aquamarine;
+            float: left;
+        }
+        .right{
+            height:300px;
+            width:300px;
+            background-color:orange;
+            float: right;
+        }
+        .right_left{
+            height:300px;
+            width:100px;
+            background-color: blueviolet;
+            float: left;
+        }
+        .right_right{
+            height:300px;
+            width:200px;
+            background-color: #ff29cd;
+            float: right;
+        }
+        .foot{
+            height:100px;
+            width:500px;
+            background: green;
+
+            margin:0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="head"></div>
+    </div>
+    <div class="main">
+        <div class="left"></div>
+        <div class="right">
+            <div class="right_left"></div>
+            <div class="right_right"></div>
+        </div>
+    </div>
+    <div class="foot"></div>
+</body>
+</html>
