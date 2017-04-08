@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48fefddc-3996-4db9-82c9-ab3c09306a4a" name="Default" comment="" />
+    <list default="true" id="48fefddc-3996-4db9-82c9-ab3c09306a4a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -73,8 +75,8 @@
       <file leaf-file-name="flex_two_clo.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flex_two_clo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="27" column="9" lean-forward="false" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+            <state relative-caret-position="536">
+              <caret line="33" column="4" lean-forward="false" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -278,12 +280,12 @@
       <updated>1491037398276</updated>
       <workItem from="1491037399547" duration="19303000" />
       <workItem from="1491138773756" duration="32000" />
-      <workItem from="1491622741897" duration="918000" />
+      <workItem from="1491622741897" duration="962000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20253000" />
+    <option name="totallyTimeSpent" value="20297000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1046" extended-state="6" />
@@ -551,8 +553,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flex_two_clo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="27" column="9" lean-forward="false" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        <state relative-caret-position="536">
+          <caret line="33" column="4" lean-forward="false" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
           <folding />
         </state>
       </provider>
