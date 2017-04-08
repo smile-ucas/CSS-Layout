@@ -7,6 +7,8 @@ CSS布局  flex布局（骰子布局，含响应式设计的圣杯布局，网�
 
 [圣杯布局(flex，含响应式设计，当浏览器宽度缩小到一定程度，中间主体部分垂直叠加)](https://smile-ucas.github.io/CSS-Layout/flex_shengbeibuju.html)
 
+[flex实现两列布局](https://smile-ucas.github.io/CSS-Layout/flex_two_clo.html)
+
 [一列布局](https://smile-ucas.github.io/CSS-Layout/one_clo.html)
 
 [两列布局](https://smile-ucas.github.io/CSS-Layout/two_clo.html)
