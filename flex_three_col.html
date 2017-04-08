@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex 三列布局</title>
+</head>
+<style>
+    body,html{
+        height:100%;
+    }
+    .main{
+        display: flex;
+        height:90%;
+        width: 50%;
+        margin: 0 auto;
+        background-color: aliceblue;
+
+        justify-content: space-around;
+        align-items:center;
+    }
+    .one{
+        width: 10%;
+        background-color: #84ffc4;
+        height:30%;
+
+        align-self: flex-end;
+    }
+    .two{
+        width: 30%;
+        background-color: #bbbbbb;
+        height:50%;
+    }
+    .three{
+        width: 10%;
+        background-color: #ff29cd;
+        height:30%;
+    }
+</style>
+<body>
+<div class="main">
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+</div>
+</body>
+</html>
