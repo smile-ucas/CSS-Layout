@@ -9,6 +9,8 @@ CSS布局  flex布局（骰子布局，含响应式设计的圣杯布局，网�
 
 [flex实现两列布局](https://smile-ucas.github.io/CSS-Layout/flex_two_clo.html)
 
+[flex实现三列布局](https://smile-ucas.github.io/CSS-Layout/flex_three_clo.html)
+
 [一列布局](https://smile-ucas.github.io/CSS-Layout/one_clo.html)
 
 [两列布局](https://smile-ucas.github.io/CSS-Layout/two_clo.html)
