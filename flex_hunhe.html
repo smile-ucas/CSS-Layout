@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex实现混合布局</title>
+    <style>
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            height: 500px;
+            width: 500px;
+
+            margin: 0 auto;
+
+
+        }
+        .head{
+            height:20%;
+            background-color: #84ffc4;
+        }
+        .body{
+            height:80%;
+            background-color: #d7d7d7;
+
+            display: flex;
+            flex-direction: row;
+        }
+        .left{
+            height: 100%;
+            width: 20%;
+
+            background-color: #ff29cd;
+            display: flex;
+            flex-direction: column;
+        }
+        .one{
+            height: 30%;
+            background-color: blueviolet;
+        }
+        .two{
+            height: 30%;
+            background-color: brown;
+        }
+        .three{
+            height:40%;
+            background-color: blue;
+        }
+        .mid{
+            height: 100%;
+            width: 50%;
+            background-color: antiquewhite;
+        }
+        .right{
+            height: 100%;
+            width: 30%;
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="head"></div>
+
+    <div class="body">
+        <div class="left">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+        </div>
+        <div class="mid"></div>
+        <div class="right"></div>
+    </div>
+</div>
+
+</body>
+</html>
