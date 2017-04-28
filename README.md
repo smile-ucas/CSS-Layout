@@ -22,3 +22,5 @@ CSS布局  flex布局（骰子布局，含响应式设计的圣杯布局，网�
 [混合布局二](https://smile-ucas.github.io/CSS-Layout/hunhe_layout_1.html)
 
 [混合布局三](https://smile-ucas.github.io/CSS-Layout/test.html)
+
+[子绝父相——加border制作的竖线](https://smile-ucas.github.io/CSS-Layout/flex_average_test.html)
