@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>flex设计</title>
     <style>
+
+        <!--注释掉的是错误的忽略了高度-->
         /*.parent{*/
             /*display: flex;*/
             /*flex-direction: row;*/
@@ -41,13 +43,23 @@
             width: 100px;
         }
         .lBottom{
-            height:300px;
+            height:300px;/*陷阱一：没有高度怎么行！  */
 
         }
         .right{
             display: flex;
             justify-content: center;
             align-items: center;
+
+            /*陷阱二：最大的div宽是跟着浏览器，左侧的100px是跟着它的子div  那这个右侧（最大的父div宽减去左侧div宽）的怎么自适应这剩下的宽度，用这个属性  */
+            flex:1;
+            /*项目的属性，flex是flex-grow, flex-shrink 和 flex-basis的简写，默认值为0 1 auto。后两个属性可选*/
+            /*可参考阮一峰博客 http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html*/
+        }
+        .rChild{
+            /*陷阱三：这个在右侧div中间垂直居中的小div的长 高多少，不指定就是都为0呀！！！  */
+            height:100px;
+            width: 100px;
         }
 
         .presentBorder{
