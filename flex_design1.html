@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex设计</title>
+    <style>
+        /*.parent{*/
+            /*display: flex;*/
+            /*flex-direction: row;*/
+        /*}*/
+        /*.left{*/
+            /*display: flex;*/
+            /*flex-direction: column;*/
+        /*}*/
+        /*.lTop{*/
+            /*height:100px;*/
+            /*width: 100px;*/
+        /*}*/
+        /*.right{*/
+            /*display: flex;*/
+            /*justify-content: center;*/
+            /*align-items: center;*/
+        /*}*/
+
+        /*.presentBorder{*/
+            /*border: 1px solid #ccc;*/
+        /*}*/
+
+
+        .parent{
+            display: flex;
+            flex-direction: row;
+
+        }
+        .left{
+            display: flex;
+            flex-direction: column;
+        }
+        .lTop{
+            height:100px;
+            width: 100px;
+        }
+        .lBottom{
+            height:300px;
+
+        }
+        .right{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .presentBorder{
+            border: 1px solid #ccc;
+        }
+
+    </style>
+</head>
+<body>
+<div class="parent presentBorder">
+    <div class="left presentBorder">
+        <div class="lTop presentBorder"></div>
+        <div class="lBottom presentBorder"></div>
+    </div>
+    <div class="right presentBorder">
+        <div class="rChild presentBorder"></div>
+    </div>
+</div>
+</body>
+</html>
